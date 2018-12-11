@@ -1,9 +1,7 @@
 # Laravel Mix Atomizer
----
 Laravel Mix extension for Atomic CSS support.
 
 ## Usage
----
 Start by installing the extension
 ```
 npm install laravel-mix-atomizer --save-dev
