@@ -28,20 +28,21 @@ module.exports = {
 }
 ```
 
-#### 3. Create an `index.js` file and place it inside the root directory and import the html files
+#### 3. Create an `index.js` file
 ```js
 import html from './public/index.html'
 import html from './public/about.html'
 ...
 ```
 
-#### 3. Require it within your `webpack.mix.js` file
+#### 3. Require the package within your `webpack.mix.js` file and compile the previous `js` file with mix
 ```js
 let mix = require('laravel-mix');
 
 require('laravel-mix-atomizer');
 
-mix.sass('resources/assets/sass/default.scss', 'public/css')
+mix.js('resources/js/default.js', 'public/js')
+   .sass('resources/assets/sass/default.scss', 'public/css')
    .atomize();
 ```
 
