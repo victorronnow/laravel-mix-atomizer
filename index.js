@@ -2,6 +2,13 @@ let mix = require('laravel-mix');
 let path = require('path');
 
 class Atomizer {
+    dependencies() {
+        return [
+            'html-loader',
+            'webpack-atomizer-loader'
+        ];
+    }
+
     register(configPath = './acss.js') {
         this.configPath = configPath;
     }
