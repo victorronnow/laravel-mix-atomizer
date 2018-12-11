@@ -8,7 +8,7 @@ npm install laravel-mix-atomizer --save-dev
 ```
 
 Require it within your `webpack.mix.js` file
-```
+```js
 let mix = require('laravel-mix');
 
 require('laravel-mix-tailwind');
