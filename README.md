@@ -8,7 +8,7 @@ npm install laravel-mix-atomizer --save-dev
 ```
 
 Create an `acss.js` config file and place it inside the root directory
-```
+```js
 module.exports = {
     cssDest: './main.css',
     options: {
