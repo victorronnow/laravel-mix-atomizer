@@ -28,7 +28,7 @@ module.exports = {
 }
 ```
 
-#### 3. Create an `index.js` file
+#### 3. Create a `default.js` file
 ```js
 import html from './public/index.html'
 import html from './public/about.html'
