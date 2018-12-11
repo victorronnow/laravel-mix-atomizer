@@ -2,12 +2,12 @@
 Laravel Mix extension for Atomic CSS support.
 
 ## Usage
-Start by installing the extension
+### 1. Start by installing the extension
 ```
 npm install laravel-mix-atomizer --save-dev
 ```
 
-Create an `acss.js` config file and place it inside the root directory
+### 2. Create an `acss.js` config file and place it inside the root directory
 ```js
 module.exports = {
     cssDest: './main.css',
@@ -28,7 +28,7 @@ module.exports = {
 }
 ```
 
-Require it within your `webpack.mix.js` file
+### 3. Require it within your `webpack.mix.js` file
 ```js
 let mix = require('laravel-mix');
 
@@ -38,4 +38,4 @@ mix.sass('resources/assets/sass/default.scss', 'public/css')
    .atomize();
 ```
 
-Run `npm run dev` to compile everything down.
+### 4. Run `npm run dev` to compile everything down.
