@@ -22,9 +22,8 @@
     ],
     "author": "Victor Rønnow",
     "license": "MIT",
-    "devDependencies": {
-        "html-loader": "^0.5.5",
-        "webpack-atomizer-loader": "^1.0.0"
+    "bugs": {
+        "url": "https://github.com/victorronnow/laravel-mix-atomizer/issues"
     },
-    "dependencies": {}
+    "homepage": "https://github.com/victorronnow/laravel-mix-atomizer#readme"
 }
