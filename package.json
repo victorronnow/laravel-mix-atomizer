@@ -1,6 +1,6 @@
 {
     "name": "laravel-mix-atomizer",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Laravel Mix extension for Atomic CSS support.",
     "main": "index.js",
     "scripts": {
