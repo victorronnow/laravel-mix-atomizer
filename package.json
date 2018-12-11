@@ -1,0 +1,29 @@
+{
+    "name": "laravel-mix-atomizer",
+    "version": "0.1.0",
+    "description": "Laravel Mix extension for Atomic CSS support.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "keywords": [
+        "laravel",
+        "laravel-mix",
+        "mix",
+        "atomic",
+        "atomize",
+        "atomizer",
+        "atomizr",
+        "css"
+    ],
+    "author": "Victor Rønnow",
+    "license": "MIT",
+    "devDependencies": {
+        "html-loader": "^0.5.5",
+        "webpack-atomizer-loader": "^1.0.0"
+    },
+    "dependencies": {}
+}
