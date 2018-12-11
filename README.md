@@ -28,6 +28,13 @@ module.exports = {
 }
 ```
 
+#### 3. Create an `index.js` file and place it inside the root directory and import the html files
+```
+import html from './public/index.html'
+import html from './public/about.html'
+...
+```
+
 #### 3. Require it within your `webpack.mix.js` file
 ```js
 let mix = require('laravel-mix');
