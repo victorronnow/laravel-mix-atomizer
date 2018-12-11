@@ -29,7 +29,7 @@ module.exports = {
 ```
 
 #### 3. Create an `index.js` file and place it inside the root directory and import the html files
-```
+```js
 import html from './public/index.html'
 import html from './public/about.html'
 ...
