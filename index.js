@@ -11,6 +11,7 @@ class Atomizer {
 
     register(htmlRoot = 'public', configPath = './acss.js') {
         this.htmlRoot = htmlRoot;
+        this.configPath = configPath;
     }
 
     webpackConfig(config) {
