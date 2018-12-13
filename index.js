@@ -1,34 +1,37 @@
 let mix = require('laravel-mix');
 let path = require('path');
+let glob = require('glob');
 
 class Atomizer {
     dependencies() {
         return [
-            'html-loader',
             'webpack-atomizer-loader'
         ];
     }
 
-    register(configPath = './acss.js') {
-        this.configPath = configPath;
+    register(htmlRoot = 'public', configPath = './acss.js') {
+        this.htmlRoot = htmlRoot;
+    }
+
+    webpackConfig(config) {
+        let filePaths = glob.sync(`${this.htmlRoot}/**/*.html`, { realpath: true });
+        config.entry.mix = config.entry.mix.concat(filePaths);
     }
 
     webpackRules() {
         return [
             {
                 test: /\.(html)$/,
-                loader: 'html-loader'
-            },
-            {
-                test: /\.(html)$/,
                 exclude: /(node_modules)/,
-                loader: 'webpack-atomizer-loader',
-                query: {
-                    configPath: path.resolve(this.configPath)
+                use: {
+                    loader: 'webpack-atomizer-loader',
+                    options: {
+                        configPath: path.resolve(this.configPath)
+                    }
                 }
             }
         ]
     }
 }
 
-mix.extend('atomize', new Atomizer);
+mix.extend('atomize', new Atomizer());
